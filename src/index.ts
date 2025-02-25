@@ -23,11 +23,13 @@ app.get('/db', async (req: Request, res: Response) => {
     try {
         const result = await pool.query('SELECT NOW()');
         res.json(result.rows);
-    } catch (err) {
-        console.error(err);
+    } catch (err: any) {
+        console.error('DB Error:', err.message);
+        console.error('Full Error:', err); 
         res.status(500).send('DB Error');
     }
 });
+
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
