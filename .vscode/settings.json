@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "dpg-cuuh3l8gph6c73apb5tg-a.oregon-postgres.render.com",
+            "port": 5432,
+            "driver": "Redshift Driver (Dedicated ver)",
+            "name": "rgt-database",
+            "database": "rgt_database",
+            "username": "rgt_database_user",
+            "password": "mYDYQF3h7akmBsTt4KoVTNVpA2ae6P6P"
+        }
+    ]
+}
